@@ -169,3 +169,26 @@ ggplot() +
 
 ```
 
+
+#################### Amin #############
+# exploring wave 3
+# as there is a huge difference in the percentage of yes in wave three, we are going to consider this wave more precisely to figure out what 
+# the potential reasons are for this gape.
+```{r}
+d%>%
+  filter(dec_o==1, wave==3)%>%
+  ggplot(aes(y = age, x=factor(gender)))+
+  geom_boxplot()+
+  ylim(18,30)
+
+## not a big difference in age in wave 3.
+```
+# not a big difference in age was there in wave three. Overall importance of race will be considered next as well as the importance of race in
+# wave three
+```{r}
+
+```
+
+
+
+
